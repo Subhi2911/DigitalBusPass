@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation pg1</title>
+    <link rel="stylesheet" href="stylesec.css">
+    <link rel="SignaturePad" href="https://github.com/szimek/signature_pad">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img class="img-logo" src="KRMU-logo-univ-400x75.png">
+            </div>
+            <p class="featuring">Academics&nbsp;&nbsp;&nbsp; Programmes&nbsp;&nbsp;&nbsp;Admissions&nbsp;&nbsp;&nbsp;Placement&nbsp;&nbsp;&nbsp;Research&nbsp;&nbsp;&nbsp;Life At KRMU&nbsp;&nbsp;&nbsp;About Us</p>
+        </div>
+    </header>
+    <main>
+        <h1 class="heading">welcome</h1>
+        <div class="form">
+            <label class="route">Bus Route</label>
+            <input id="busRoute" placeholder="" type="text" name="busRoute">
+            <h1 class="institution">KR MANGALAM UNIVERSITY</h1>
+            
+            
+            <p class="additional">Sohna Road, Gurgaon-122103,</p>
+            <p class="add"><b>Phone No.</b> 8800176543,8448393630 <b>E-Mail: </b>transport@krmangalam.edu.in</p>
+            <!-- <div class="imaging">
+                <div class="image-box">
+                    <input type="file" id="imageInput" accept="image/*"><br><br>
+
+                </div>
+            <div>
+                <button id="removeBtn" style="display:none;">Remove Image</button> 
+            </div>
+            </div>  -->
+            <div class="user-image">
+                <label for="user-photo">Upload your photo:</label><br>
+                <input type="file" id="user-photo" accept="image/*"><br>
+
+                <div id="preview-container">
+                    <span>No image selected</span>
+                </div>
+
+            <!-- <button type="button" id="remove-btn">Remove Image</button><br> -->
+
+            <!-- <button type="submit">Submit</button> -->
+            </div>
+            <h2 class="transForm">TRANSPORTATION FORM</h2>
+            <div class="paragraph">
+                I request that my Son/Daughter whose particulars are given below, be permitted to use the University bus<br> journey from 
+                <input type="text" class="from-input" placeholder="Bus Stop"> 
+                to K.R. Mangalam University.
+            </div>
+            <h3 class="info-students">INFORMATION OF STUDENT :-</h3>
+            <div class="info">
+                <div class="firstlastgender">
+                    <div class="info-in">
+                        <label class="firstName labinfo" for="firstName">First Name: </label>
+                        <input id="first-name" class="information" type="text" placeholder="firstName">
+                    </div>
+                    
+                    <div class="info-in">
+                        <label class="lastName labinfo" for="lasName">Last Name: </label>
+                        <input id="last-name" class="information" type="text" placeholder="lastName">
+                    </div>
+                    
+                    <div class="info-in">
+                        <label class="gender labinfo" for="gender">Gender(M/F): </label>
+                         <input id="gender" class="information" type="text" placeholder="gender">
+                    </div>
+                </div>
+                <div class="programmesemroll">
+                    <div class="info-in">
+                        <label class="programme labinfo" for="programme">Programme: </label>
+                        <input id="programme" class="information" type="text" placeholder="programme">
+                    </div>
+    
+                    <div class="info-in">
+                        <label class="semester labinfo" for="semester">Semester: </label>
+                        <input id="semester" class="information" type="number" placeholder="semester">
+                    </div>
+    
+                    <div class="info-in">
+                        <label class="rollNo labinfo" for="rollNo">Roll No.: </label>
+                        <input id="roll-No" class="information" type="number" placeholder="rollNo">
+                    </div>
+                </div>
+
+                <div class="buscontactemail">
+                    <div class="info-in">
+                        <label class="busRoute labinfo" for="busRoute">Bus Route: </label>
+                        <input id="bus-Route" class="information" type="text" placeholder="busRoute">
+                    </div>
+    
+                    <div class="info-in">
+                        <label class="contactNo labinfo" for="contactNo">Contact No.: </label>
+                        <input id="contact-No" class="information" type="number" placeholder="contactNo">
+                    </div>
+    
+                    <div class="info-in">
+                        <label class="emailid labinfo" for="emailId">Email Id: </label>
+                        <input id="emailid" class="information" type="email" placeholder="emailId">
+                    </div>
+                </div>
+            </div>
+            <h3 class="info-parents">INFORMATION OF PARENTS/GUARDIAN:- </h3>
+            <div class="parent-details">
+                <div class="nameadd">
+                    <label class="parentName par" for="parentName">Parent/Guardian Name: </label>
+                    <input class="parentname from-input par" type="text" name="parent_name" placeholder="parentName"><br>
+                    <label class="address par" for="address"> Residential Address: </label>
+                    <input class="addressval from-input par" type="text" name="address" placeholder="address">
+                </div>
+                <div class="contact-detail">
+                    <label class="contactDetails1 par" for="contactDetails1"> Contact Details 1: </label>
+                    <input class="contact1 from-input par" type="number" name="contact1" placeholder="contactDetails1">
+                    <label class="contactDetails2 par" for="contactDetails2"> Contact Details 2: </label>
+                    <input class="contact2  from-input par" type="number" name="contact2" placeholder="contactDetails2">
+                </div>
+            </div>
+            <h3 class="undertaking">UNDERTAKING OF STUDENT</h3>
+            <div class="under">
+                <div class="student-undertaking">
+                    I Mr./Miss. <input class="underName" type="text"><i>(Name of student)</i> Son/Daughter of <input class="underParent" type="text"><i>(Name of parent)</i><br>
+                    declares to undertake that I would like to avail the transport facility and I shall pay the transport fee on time <br>
+                    i.e. by 30th June for Odd semester/ 31st January for Even semester.<br><br>
+                </div>
+                <div class="student-undertaking2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, I fail to deposit the fee I will pay the due fee along with fine by 31st July for Odd semester/31st <br>
+                    January for Even semester. If still not paid then <b>I will stop boarding the Bus Immediately and I authorize <br>
+                    the university to adjust the Transport fee for this one month from my Security amount deposited at the time of admission.</b>
+                </div>
+            </div>
+            <div class="fee-pdf">
+                <h4 class="fee">TPT Fees Pdf : </h4>
+                <label id="fileInfo" for="pdf">Upload your reciept:</label><br>
+                <input id="fee-reciept" type="file" name="upload" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx"><br>
+                
+                
+
+                <!-- <div id="preview-container">
+                    <span>No image selected</span>
+                </div> -->
+
+            <!-- <button type="button" id="removefee-btn">Remove element</button><br> -->
+            </div>
+            <div class="remarks">
+                Remarks:
+                <input id="student-remarks" type="text" name="student-remark">
+            </div>
+            <form id="approvalForm">
+                <div class="signature-section">
+                  <!-- Student Signature -->
+                  <div class="signature-block">
+                    <canvas id="student-signature" width="150" height="60"></canvas>
+                    <div class="signature-label">Parents/Student Signature</div>
+                    <input type="hidden" name="studentSignature" id="studentSignature">
+                  </div>
+            
+                  <!-- Transport Office (not editable here) -->
+                  <div class="signature-block transsign">
+                    <div style="width:200px; height:60px; border-bottom:1px solid black;"></div>
+                    <div class="signature-label">Transport Office</div>
+                  </div>
+            
+                  <!-- Account Office (not editable here) -->
+                  <div class="signature-block accountssign">
+                    <div style="width:200px; height:60px; border-bottom:1px solid black;"></div>
+                    <div class="signature-label">Account Office</div>
+                  </div>
+                </div>
+            
+                
+              </form>
+               
+        </div>
+        <button type="submit" id="submitBtn">Submit</button>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

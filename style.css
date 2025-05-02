@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.border{
+    background-color: white;
+}
+
+.bgimg {
+    width: 500px;    /* or any size you want */
+    height: auto;    /* keeps the aspect ratio */
+    display: block;  /* removes small gaps below the image */
+    margin: 20px auto; /* centers the image horizontally */
+}
+
+body{
+    background-image: url('2514_1krm1.png');
+    background-size: cover;      /* Makes the image cover the entire body */
+    background-repeat: no-repeat; /* Stops repeating */
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    /* display: flex; */
+}
+
+.navin-bar{
+    background-color: hsl(0, 6%, 69%,80%);
+    height: 40px;
+    width: 100%;
+    bottom: 2px;
+    /* position: fixed; */
+    top: 0;
+    z-index: 999;
+    display: flex;
+    border-bottom: 2px solid white;
+    justify-content: right;
+    align-items: center ;
+} 
+.nav-bar{
+    background-color: hsl(0, 6%, 69%,80%);
+    /* opacity: 0.6;  */
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    /* position: fixed;  */
+    /* top: 0;
+    z-index: 999; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navin-feature{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin: 2px;
+    
+    right: 0;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+i{
+    margin-left: 15px;
+    margin-right: 4px;
+}
+
+.featuring{
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin: 2px;
+}
+
+.logo{
+    margin-top: 8px;
+    height: 40px;
+    width: 268px;
+}
+
+.img-logo{
+    height: 40px;
+    width: 268px;
+    opacity: 1.0;
+}
+
+.userpass{
+    height: 200px;
+    width: 250px;
+    position: relative;
+    top: 100px;
+    left: 500px;
+    display: flex wrap ;
+    background-color: hsl(208, 100%, 97%,50%);
+    justify-content: center;
+    align-items: center;
+
+}
+input{
+    width: 200px;
+    
+}
+.sub{
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.login{
+    font-weight: bolder ;
+    font-size: 2rem;
+    margin-left: 75px;
+    margin-bottom: 18px;
+    
+}
+.user,.pass{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.confirmBtn{
+    margin-top: 12px;
+    margin-left: 65px;
+    /* border: 2px solid;  */
+    background-color: rgba(218, 47, 47, 0.6);
+    padding: 5px;
+}
