@@ -16,6 +16,12 @@
 // For index.html
 const usernameInput = document.querySelector('#username');
 const submitBtn = document.querySelector('.confirmBtn');
+const welcomeMessage = document.querySelector('.heading');
+const input = document.getElementById('user-photo');
+const previewContainer = document.getElementById('preview-container');
+const fileInput = document.getElementById('fee-reciept');
+const fileInfo = document.getElementById('fileInfo');
+
 
 if (submitBtn && usernameInput) {
   submitBtn.addEventListener('click', function() {
@@ -29,7 +35,6 @@ if (submitBtn && usernameInput) {
 }
 
 // For second.html
-const welcomeMessage = document.querySelector('.heading');
 
 if (welcomeMessage) {
   const params = new URLSearchParams(window.location.search);
@@ -41,8 +46,7 @@ if (welcomeMessage) {
     welcomeMessage.innerText = "No username found.";
   }
 }
-const input = document.getElementById('user-photo');
-  const previewContainer = document.getElementById('preview-container');
+
   // const removeBtn = document.getElementById('remove-btn');
 
   function previewImage(file) {
@@ -81,8 +85,7 @@ const input = document.getElementById('user-photo');
   // });
 
 
-  const fileInput = document.getElementById('fee-reciept');
-  const fileInfo = document.getElementById('fileInfo');
+  
   // const removeFeeBtn = document.getElementById('removefee-btn');
 
   fileInput.addEventListener('change', function () {
@@ -132,3 +135,32 @@ const input = document.getElementById('user-photo');
      document.getElementById("studentSignature").value = dataURL;
      //alert("Signature saved and form ready for submission.");
    //});
+// Get the canvas and the clear button elements
+
+const ctx = canvas.getContext('2d');
+const clearButton = document.getElementById('clearButton');
+
+// Function to clear the canvas
+clearButton.addEventListener('click', () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height); // Clears the entire canvas
+});
+
+// Optionally, you can add the code to allow drawing on the canvas:
+let isDrawing = false;
+
+canvas.addEventListener('mousedown', (e) => {
+  isDrawing = true;
+  ctx.beginPath();
+  ctx.moveTo(e.offsetX, e.offsetY);
+});
+
+canvas.addEventListener('mousemove', (e) => {
+  if (isDrawing) {
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+  }
+});
+
+canvas.addEventListener('mouseup', () => {
+  isDrawing = false;
+});
